@@ -1,7 +1,16 @@
 #include <iostream>
 using namespace std;
+
 int tong(int a, int b);
 int hieu(int a, int b);
+int hieu(int a, int b)
+{
+	return a-b;
+}
+int tich(int a, int b)
+{
+	return a*b;
+}
 
 int main()
 {
@@ -11,7 +20,11 @@ int main()
 	cin >> a;
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
-	cout << "Chon phep toan (+,-) ";
+	cout << "Chon phep toan (+,-,*) ";
+if (pheptoan == "-")
+	cout << "Hieu ="<<hieu(a,b)<<endl;
+else if (pheptoan =="*")
+	cout <<"tich="<<tich(a,b)<<endl;
 	cin >> phepToan;
 	system("pause");
 	return 0;
